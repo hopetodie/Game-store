@@ -9,7 +9,8 @@
             .wrapper {
                 width: 280px;
                 padding-bottom: 10px;
-                .chel{
+
+                .chel {
                     position: relative;
 
                     &::before {
@@ -23,6 +24,7 @@
                         z-index: 1;
                     }
                 }
+
                 .game {
                     width: 280px;
                     height: 65px;
@@ -32,21 +34,22 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-              
 
-                    &__title {                   
+
+                    &__title {
                         font-size: 36px;
-                        line-height: 42px;                   
+                        line-height: 42px;
                         margin: 0;
                         margin-right: 5px;
                     }
 
-                    &__subtitle {                      
+                    &__subtitle {
                         font-size: 14px;
                         line-height: 16px;
                         margin: 0;
                     }
-                    &__descr{                       
+
+                    &__descr {
                         font-size: 14px;
                         line-height: 16px;
                         margin: 0;
@@ -74,11 +77,12 @@
                         color: #F2C94C;
                         margin: 20px 10px 10px 0;
                     }
-                    &__img{
+
+                    &__img {
                         display: block;
                         margin: 0 auto;
                         margin-top: 10px;
-                       
+
                     }
                 }
 
