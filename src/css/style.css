@@ -1657,7 +1657,6 @@ a {
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
-  margin: 20px 127px 10px 10px;
 }
 
 .shop .row .col .wrapper .text__subtitle {
@@ -1667,10 +1666,10 @@ a {
   font-size: 18px;
   line-height: 21px;
   color: #F2C94C;
-  margin: 20px 10px 10px 0;
+  margin: 0;
 }
 
-.shop .row .col .wrapper .text__img {
+.shop .row .col .wrapper .img {
   display: block;
   margin: 0 auto;
   margin-top: 10px;
@@ -1684,6 +1683,10 @@ a {
   line-height: 16px;
   color: #BDBDBD;
   margin-left: 10px;
+}
+
+.shop .row .col .wrapper .textp {
+  padding: 10%;
 }
 
 .first-battle-1__text {

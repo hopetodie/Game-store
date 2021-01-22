@@ -65,7 +65,7 @@
                         font-size: 18px;
                         line-height: 21px;
                         color: #FFFFFF;
-                        margin: 20px 127px 10px 10px;
+
                     }
 
                     &__subtitle {
@@ -75,15 +75,16 @@
                         font-size: 18px;
                         line-height: 21px;
                         color: #F2C94C;
-                        margin: 20px 10px 10px 0;
+                        margin: 0;
                     }
 
-                    &__img {
-                        display: block;
-                        margin: 0 auto;
-                        margin-top: 10px;
 
-                    }
+                }
+
+                .img {
+                    display: block;
+                    margin: 0 auto;
+                    margin-top: 10px;
                 }
 
                 .text1 {
@@ -94,6 +95,10 @@
                     line-height: 16px;
                     color: #BDBDBD;
                     margin-left: 10px;
+                }
+
+                .textp {
+                    padding: 10%;
                 }
             }
         }
