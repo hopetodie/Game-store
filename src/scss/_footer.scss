@@ -1,0 +1,47 @@
+.footer {
+    margin-top: 40px;
+
+    &__bg {
+        max-width: 1200px;
+        height: 193px;
+        margin: 0 auto;
+        background: #000;
+        position: relative;
+        z-index: 1;
+        display: flex;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        margin-right: 40px;
+    }
+
+    .row {
+        max-width: 880px;
+        width: 100%;
+        
+        .col {
+
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 40px;
+
+                &__link {
+                    margin-bottom: 10px;
+                    text-decoration: none;
+                    color: grey;
+
+                    &:first-child {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}

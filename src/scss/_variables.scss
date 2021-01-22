@@ -1,0 +1,30 @@
+@mixin bg {
+    max-width: 430px;
+    height: 242px;
+    position: relative;
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 110%;
+        top: -20px;
+        right: -60px;
+
+    }
+}
+
+@mixin bg-1 {
+    width: 205px;
+    height: 205px;
+    position: relative;
+
+    &::before {
+        width: 100%;
+        height: 100%;
+        content: '';
+        position: absolute;
+    }   
+   
+}

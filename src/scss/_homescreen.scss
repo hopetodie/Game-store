@@ -1,0 +1,51 @@
+.homescreen{
+   &__bg{
+   padding: 110px 0 40px 20px;
+    background: url(../image/homescreen/homescreen.png) top no-repeat;
+    
+   }
+   &__bg1{
+   padding: 110px 0 40px 20px;
+    background: url(../image/Desktop2/Rectangle2.png) top no-repeat;
+    
+   }
+   &__title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    align-items: center;
+    color: #FFFFFF;    
+   }
+   &__subtitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    align-items: center;
+    color: #ffffff80;  
+   }
+   &__descr{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    align-items: center;
+    color: #56CCF2;
+    margin-bottom: 14px;
+   }
+   &__link{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    color: #ffffff80;  
+    text-decoration: none;  
+   
+   }
+}

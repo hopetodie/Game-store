@@ -1,0 +1,115 @@
+.first-battle-1 {
+    &__text {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        align-items: center;
+        color: #FFFFFF;
+        margin-right: 20px;
+    }
+
+    &__subtitle {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        align-items: center;
+        color: #828282;
+    }
+
+    .row {
+        background: #1E1E20;
+
+        .col {
+            width: 205px;
+            height: 396px;
+            background: #000;
+            margin: 0 10px;
+            padding: 0;
+
+            .bg-1 {
+                @include bg-1;
+                background: url(../image/first_battle/image4.png) no-repeat;
+
+                &::before {
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #060606 100%);
+                }
+            }
+
+            .bg-2 {
+                @include bg-1;
+                background: url(../image/first_battle/image3.png) no-repeat;
+
+                &::before {
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #060606 100%);
+                }
+            }
+
+            .bg-3 {
+                @include bg-1;
+                background: url(../image/first_battle/image1.png) no-repeat;
+
+                &::before {
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #060606 100%);
+                }
+            }
+
+            .bg-4 {
+                @include bg-1;
+                background: url(../image/first_battle/image.png) no-repeat;
+
+                &::before {
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #060606 100%);
+                }
+            }
+
+            .wrapper {
+                padding: 174px 10px 10px;
+                position: relative;
+                z-index: 1;
+
+                &__title {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 21px;
+                    align-items: center;
+                    color: #BDBDBD;
+                }
+
+                &__subtitle {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #BDBDBD;
+                    margin-top: 20px;
+                }
+
+                &__descr {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 36px;
+                    line-height: 42px;
+                    text-align: center;
+                    color: #F2C94C;
+                    margin-bottom: 10px;
+                }
+            }
+
+
+        }
+    }
+}

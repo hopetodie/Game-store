@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1E1E20;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    display: inline;
+}
+.box{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: 40px;
+    padding: 0;
+}
+
+
+
+
+
+@import "../scss/variables";
+@import "../scss/header";
+@import "../scss/asidebar";
+@import "../scss/homescreen";
+@import "../scss/new-battle";
+@import "../scss/tape";
+@import "../scss/first-battle";
+@import "../scss/tape-1";
+@import "../scss/new-battle-1";
+@import "../scss/footer";
+@import "../scss/asidebar-right";
+@import "../scss/news";
+@import "../scss/shop";
+@import "../scss/first-battle-1";
+
+

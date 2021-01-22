@@ -1,0 +1,64 @@
+.tape-1 {
+    &__text {
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        align-items: center;
+        color: #FFFFFF;
+        margin-right: 20px;
+    }
+
+    &__subtitle {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        align-items: center;
+        color: #828282;
+    }
+
+    .bg {
+        background: linear-gradient(90deg, #000000 58.81%, rgba(0, 0, 0, 0) 100%), url(../image/tape1/tapescreen.png);
+        width: 880px;
+        height: 130px;
+        .row {
+            .col {
+                max-width: 50px;
+                height: 66px;
+              margin-right: 25px;
+              &:last-child{
+                  margin-right: 27px;
+              }
+                .wrapper {
+                   
+                    &__img {
+                        margin: 30px 0 10px 27px;
+                        
+                    }
+
+                    &__title {
+                        width: 28px;
+                        height: 16px;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 16px;
+                        align-items: center;                      
+                        color: #828282;
+                        margin-left: 39px;
+                    }
+                }
+            }
+        }
+    }
+}

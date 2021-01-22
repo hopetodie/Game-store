@@ -1,0 +1,116 @@
+.news {
+    .kek {
+        display: flex;
+        column-gap: 20px
+    }
+
+    .container {
+        width: 640px;
+        margin: 0 auto;
+        padding-left: 40px;
+
+    }
+
+    .wrapper {
+
+
+        .content {
+            padding-bottom: 103px;
+        }
+
+        .content1 {
+            padding-bottom: 103px;
+        }
+
+        .content2 {
+            padding-bottom: 50px;
+        }
+
+        &__title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 21px;
+            align-items: center;
+            color: #FFFFFF;
+            margin-top: 10px;
+        }
+
+        .text {
+            display: flex;
+
+            &__img {
+                width: 25px;
+                height: 25px;
+            }
+
+            &__subtitle {
+
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16px;
+                align-items: center;
+                color: #F2F2F2;
+                margin-left: 10px;
+                margin-top: 5px;
+            }
+
+            &__descr {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16px;
+                align-items: center;
+                text-align: right;
+                color: #828282;
+                margin-left: 390px;
+                margin-top: 5px;
+            }
+
+            &__descr1 {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16px;
+                align-items: center;
+                text-align: right;
+                margin-left: 375px;
+                margin-top: 5px;
+                color: #EE4700;
+                text-decoration: none;
+            }
+        }
+
+        .text1 {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            color: #BDBDBD;
+        }
+
+        .link {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            align-items: center;
+            color: #FFFFFF;
+            opacity: 0.5;
+            position: absolute;
+            z-index: 1;
+            margin-left: 470px;
+            text-decoration: none;
+            margin-top: 24px;
+
+        }
+
+    }
+}
