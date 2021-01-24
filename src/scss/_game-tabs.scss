@@ -1,14 +1,28 @@
 .game-tabs {
-    
+  
 
-    .kek {
-        width: 300px;
-        padding-top: 20px;
+   
+
+    .shrek {
+        width: 33%;
+        display: flex;
+        justify-content: center;
     }
 
-    &__caption {
-        flex-direction: row;
-        display: flex;
+    .page__content {
+        display: none;
+
+        &_active {
+            display: block;
+        }
+    }
+
+    .page {
+        display: none;
+
+        &_active {
+            display: flex;
+        }
     }
 
     &__tab {
@@ -33,7 +47,7 @@
         display: none;
 
         &_active {
-            display: flex;
+            display: block;
             color: #fff;
         }
     }

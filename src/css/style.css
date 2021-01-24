@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(../libs/mdb/mdb.min.css);
 * {
   padding: 0;
   margin: 0;
@@ -1917,16 +1918,29 @@ a {
   height: 20px;
 }
 
-.game-tabs .kek {
-  width: 300px;
-  padding-top: 20px;
+.game-tabs .shrek {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.game-tabs__caption {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.game-tabs .page__content {
+  display: none;
+}
+
+.game-tabs .page__content_active {
+  display: block;
+}
+
+.game-tabs .page {
+  display: none;
+}
+
+.game-tabs .page_active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1961,9 +1975,7 @@ a {
 }
 
 .game-tabs__content_active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
