@@ -1918,14 +1918,8 @@ a {
   height: 20px;
 }
 
-.game-tabs .shrek {
-  width: 33%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.game-tabs__caption {
+  cursor: pointer;
 }
 
 .game-tabs .page__content {
@@ -1934,6 +1928,10 @@ a {
 
 .game-tabs .page__content_active {
   display: block;
+}
+
+.game-tabs .page__caption {
+  cursor: pointer;
 }
 
 .game-tabs .page {

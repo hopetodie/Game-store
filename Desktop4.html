@@ -19,8 +19,13 @@
                         <button class="form__btn" type="submit"></button>
                     </form>
                     <nav class="nav">
-                        <a class="nav__item" href="#">Регистрация</a>
-                        <a class="nav__item" href="#">Войти</a>
+                        <a type="button" class="nav__item" data-mdb-toggle="modal" data-mdb-target="#registration">
+                            Регистрация
+                        </a>
+                        <a type="button" class="nav__item" data-mdb-toggle="modal" data-mdb-target="#login">
+                            Войти
+                        </a>
+                        
                     </nav>
                 </div>
             </div>
@@ -121,19 +126,20 @@
                             </li>
                         </ul>
                         <div class="d-flex justify-content-end w-100 h-25">
-                            <div class="d-flex w-50 justify-content-around">
-                                <p class="col d-flex justify-content-center">очки</p>
-                                <p class="col d-flex justify-content-center">статистика</p>
-                                <p class="col d-flex justify-content-center">победы</p>
+                            <div class="d-flex w-50 justify-content-around mt-4 mb-2">
+                                <div class="col d-flex justify-content-center">очки</div>
+                                <div class="col d-flex justify-content-center">статистика</div>
+                                <div class="col d-flex justify-content-center">победы</div>
                             </div>
                         </div>
                         <div class="game-tabs__content game-tabs__content_active text-white">
                             <div class="page__content page__content_active text-white">
                                 <div class="d-flex w-100 bg-black border-bottom pt-2 pb-2">
                                     <div class="d-flex w-50 ">
-                                        <div class="me-4 text-dark ps-3">№1</div>
-                                        <div class="me-2 bg-card-3 btn-rounded pe-2 ps-2">OFF</div>
-                                        <img class="me-4 bg-dark btn-rounded pe-2 ps-2" src="./src/scss/123.svg" alt="">
+                                        <div class="me-4 text-muted ps-3">№1</div>
+                                        <div class="me-2 bg-card-3 btn-rounded pe-2 ps-2 user-select-none">OFF</div>
+                                        <img class="me-4 bg-dark btn-rounded pe-2 ps-2" src="./src/image/tab/123.svg"
+                                            alt="">
                                         <img class="me-2" src="./src/image/tab/Rectangle41.png" alt="">
                                         <div class="me-2">Username</div>
                                     </div>
@@ -145,9 +151,10 @@
                                 </div>
                                 <div class="d-flex w-100 bg-black border-bottom pt-2 pb-2">
                                     <div class="d-flex w-50 ">
-                                        <div class="me-4 text-dark ps-3">№2</div>
-                                        <div class="me-2 bg-card-3 btn-rounded pe-2 ps-2">OFF</div>
-                                        <img class="me-4 bg-dark btn-rounded pe-2 ps-2" src="./src/scss/123.svg" alt="">
+                                        <div class="me-4 text-muted ps-3">№2</div>
+                                        <div class="me-2 bg-card-3 btn-rounded pe-2 ps-2 user-select-none">OFF</div>
+                                        <img class="me-4 bg-dark btn-rounded pe-2 ps-2" src="./src/image/tab/123.svg"
+                                            alt="">
                                         <img class="me-2" src="./src/image/tab/Rectangle41.png" alt="">
                                         <div class="me-2">Username</div>
                                     </div>
@@ -161,9 +168,10 @@
                             <div class="page__content text-white">
                                 <div class="d-flex w-100 page bg-black border-bottom pt-2 pb-2">
                                     <div class="d-flex w-50 ">
-                                        <div class="me-4 text-dark ps-3">№3</div>
-                                        <div class="me-2 bg-card-3 btn-rounded pe-2 ps-2">OFF</div>
-                                        <img class="me-4 bg-dark btn-rounded pe-2 ps-2" src="./src/scss/123.svg" alt="">
+                                        <div class="me-4 text-muted ps-3">№3</div>
+                                        <div class="me-2 bg-card-3 btn-rounded pe-2 ps-2 user-select-none">OFF</div>
+                                        <img class="me-4 bg-dark btn-rounded pe-2 ps-2" src="./src/image/tab/123.svg"
+                                            alt="">
                                         <img class="me-2" src="./src/image/tab/Rectangle41.png" alt="">
                                         <div class="me-2">Username</div>
                                     </div>
@@ -175,20 +183,21 @@
                                 </div>
                                 <div class="d-flex w-100 page bg-black border-bottom pt-2 pb-2">
                                     <div class="d-flex w-50 ">
-                                        <div class="me-4 text-dark ps-3">№4</div>
-                                        <div class="me-2 bg-card-3 btn-rounded pe-2 ps-2">OFF</div>
-                                        <img class="me-4 bg-dark btn-rounded pe-2 ps-2" src="./src/scss/123.svg" alt="">
+                                        <div class="me-4 text-muted ps-3">№4</div>
+                                        <div class="me-2 bg-card-3 btn-rounded pe-2 ps-2 user-select-none">OFF</div>
+                                        <img class="me-4 bg-dark btn-rounded pe-2 ps-2" src="./src/image/tab/123.svg"
+                                            alt="">
                                         <img class="me-2" src="./src/image/tab/Rectangle41.png" alt="">
                                         <div class="me-2">Username</div>
                                     </div>
                                     <div class="d-flex w-50 justify-content-around">
-                                        <div class="d-flex justify-content-center col">1 000 000</div>
+                                        <div class="d-flex justify-content-center col ">1 000 000</div>
                                         <div class="d-flex justify-content-center col">1 000 000</div>
                                         <div class="d-flex justify-content-center col">100%</div>
                                     </div>
                                 </div>
                             </div>
-                            <ul class="page__caption nav justify-content-end">
+                            <ul class="page__caption nav justify-content-end ">
                                 <li class="page__str page__str_active me-2">
                                     1
                                 </li>
@@ -213,7 +222,7 @@
             </div>
         </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
 
         <div class="box">
             <div class="footer__bg">
@@ -249,14 +258,166 @@
                             <a href="#" class="wrapper__link">Text</a>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
 
         </div>
-    </footer> -->
+    </footer>
+    <div class="pop-up">
+
+        <div class="modal fade" id="registration" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
+                        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <!-- 2 column grid layout with text inputs for the first and last names -->
+                            <div class="row mb-4">
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input type="text" id="form3Example1" class="form-control" />
+                                        <label class="form-label" for="form3Example1">Имя</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input type="text" id="form3Example2" class="form-control" />
+                                        <label class="form-label" for="form3Example2">Фамилия</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <input type="email" id="form3Example3" class="form-control" />
+                                <label class="form-label" for="form3Example3">Электронная почта</label>
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                                <input type="password" id="form3Example4" class="form-control" />
+                                <label class="form-label" for="form3Example4">Пароль</label>
+                            </div>
+
+                            <!-- Checkbox -->
+                            <div class="form-check d-flex justify-content-center mb-4">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3"
+                                    checked />
+                                <label class="form-check-label" for="form2Example3">
+                                    Подпишитесь на нашу рассылку
+                                </label>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary btn-block mb-4">Зарегистрироваться</button>
+
+                            <!-- Register buttons -->
+                            <div class="text-center">
+                                <p>или войдите с помощью:</p>
+                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-google"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+     
+
+        <!-- Modal -->
+        <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="exampleModalLabel">Войти</h5>
+                        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                              <input type="email" id="form2Example1" class="form-control" />
+                              <label class="form-label" for="form2Example1">Электронная почта</label>
+                            </div>
+                          
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                              <input type="password" id="form2Example2" class="form-control" />
+                              <label class="form-label" for="form2Example2">Пароль</label>
+                            </div>
+                          
+                            <!-- 2 column grid layout for inline styling -->
+                            <div class="row mb-4">
+                              <div class="col d-flex justify-content-center">
+                                <!-- Checkbox -->
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="form2Example3"
+                                    checked
+                                  />
+                                  <label class="form-check-label" for="form2Example3">Запомнить</label>
+                                </div>
+                              </div>
+                          
+                              <div class="col">
+                                <!-- Simple link -->
+                                <a href="#!">Забыли пароль?</a>
+                              </div>
+                            </div>
+                          
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary btn-block mb-4">Войти</button>
+                          
+                            <!-- Register buttons -->
+                            <div class="text-center">
+                              <p>Впервые у нас? <a href="#registration"> Зарегистрируйтесь</a></p>
+                              <p>или войдите с помощью:</p>
+                              <button type="button" class="btn btn-primary btn-floating mx-1">
+                                <i class="fab fa-facebook-f"></i>
+                              </button>
+                          
+                              <button type="button" class="btn btn-primary btn-floating mx-1">
+                                <i class="fab fa-google"></i>
+                              </button>
+                          
+                              <button type="button" class="btn btn-primary btn-floating mx-1">
+                                <i class="fab fa-twitter"></i>
+                              </button>
+                          
+                              <button type="button" class="btn btn-primary btn-floating mx-1">
+                                <i class="fab fa-github"></i>
+                              </button>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./src/libs/query/jquery.min.js"></script>
+    <script src="./src/js/mdb.min.js"></script>
+    <script src="https://kit.fontawesome.com/576d270bd8.js" crossorigin="anonymous"></script>
     <script src="./src/js/main.js"></script>
-    <script src=""></script>
 
 </body>
 

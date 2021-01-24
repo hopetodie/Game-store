@@ -1,14 +1,7 @@
 .game-tabs {
-  
-
-   
-
-    .shrek {
-        width: 33%;
-        display: flex;
-        justify-content: center;
+    &__caption{
+        cursor: pointer;
     }
-
     .page__content {
         display: none;
 
@@ -16,7 +9,9 @@
             display: block;
         }
     }
-
+ .page__caption{
+     cursor: pointer;
+ }
     .page {
         display: none;
 
