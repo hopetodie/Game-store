@@ -8,6 +8,8 @@
 body {
     background: #1E1E20;
     font-family: 'Roboto', sans-serif;
+    opacity: 0;
+    transition: 1s;
 }
 a{
     display: inline;
@@ -41,5 +43,7 @@ a{
 @import "../scss/news";
 @import "../scss/shop";
 @import "../scss/first-battle-1";
+@import "../scss/exp";
+@import "../scss/game-tabs";
 
 

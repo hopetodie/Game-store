@@ -9,6 +9,9 @@
 body {
   background: #1E1E20;
   font-family: 'Roboto', sans-serif;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 a {
@@ -1838,5 +1841,129 @@ a {
   text-align: center;
   color: #F2C94C;
   margin-bottom: 10px;
+}
+
+.exp .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.exp .wrapper .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 29px;
+}
+
+.exp .wrapper .text__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-right: 17px;
+}
+
+.exp .wrapper .text__subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #828282;
+}
+
+.exp .form {
+  margin-top: 20px;
+  margin-left: 325px;
+  border: none;
+}
+
+.exp .form__input {
+  width: 260px;
+  height: 40px;
+  background: #343539;
+  border-radius: 4px;
+  color: #FFFFFF;
+  padding-left: 50px;
+  border: none;
+}
+
+.exp .form__btn {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: block;
+  background: none;
+  border: none;
+  left: 15px;
+  top: -30px;
+}
+
+.exp .form__btn:focus {
+  outline: none;
+}
+
+.exp .form__btn::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: url(../image/chapka/search.png);
+  width: 20px;
+  height: 20px;
+}
+
+.game-tabs .kek {
+  width: 300px;
+  padding-top: 20px;
+}
+
+.game-tabs__caption {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.game-tabs__tab {
+  width: 88px;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #000;
+}
+
+.game-tabs__tab_active {
+  background: #00000000;
+}
+
+.game-tabs__tab img {
+  width: 50px;
+  height: 50px;
+}
+
+.game-tabs__content {
+  display: none;
+}
+
+.game-tabs__content_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
