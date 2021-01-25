@@ -8776,6 +8776,10 @@ fieldset:disabled .btn {
   padding-right: 3rem !important;
   padding-left: 3rem !important
 }
+.px-6 {
+  padding-right: 12px !important;
+  padding-left: 12px !important
+}
 
 .py-0 {
   padding-top: 0 !important;
