@@ -1976,4 +1976,23 @@ a {
   display: block;
   color: #fff;
 }
+
+.pop-up__form {
+  background: #1E1E20;
+}
+
+.pop-up .modal-body {
+  background: #1E1E20;
+}
+
+.pop-up .modal-content {
+  background: #1E1E20;
+}
+
+.pop-up .btn-close {
+  color: #fff;
+  opacity: 1;
+  -webkit-filter: invert(1) grayscale(100%) brightness(200%);
+          filter: invert(1) grayscale(100%) brightness(200%);
+}
 /*# sourceMappingURL=style.css.map */

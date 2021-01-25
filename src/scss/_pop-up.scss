@@ -1,0 +1,17 @@
+.pop-up{
+    &__form{
+        background: #1E1E20;
+    }
+    .modal-body{
+        background: #1E1E20;
+    }
+    .modal-content{
+        background: #1E1E20;
+
+    }
+    .btn-close{
+        color: #fff;
+        opacity: 1;
+        filter: invert(1) grayscale(100%) brightness(200%);
+    }
+    }
