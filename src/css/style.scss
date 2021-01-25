@@ -10,16 +10,17 @@
 body {
     background: #1E1E20;
     font-family: 'Roboto', sans-serif;
-    opacity: 0;
-    transition: 1s;
 }
-a{
+
+a {
     display: inline;
 }
-.box{
+
+.box {
     max-width: 1280px;
     margin: 0 auto;
 }
+
 .container {
     max-width: 880px;
     margin-left: auto;
@@ -48,5 +49,3 @@ a{
 @import "../scss/exp";
 @import "../scss/game-tabs";
 @import "../scss/pop-up";
-
-
