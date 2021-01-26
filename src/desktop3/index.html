@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game website</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -18,8 +22,13 @@
                         <button class="form__btn" type="submit"></button>
                     </form>
                     <nav class="nav">
-                        <a class="nav__item" href="#">Регистрация</a>
-                        <a class="nav__item" href="#">Войти</a>
+                        <a type="button" class="nav__item" data-mdb-toggle="modal" data-mdb-target="#registration">
+                            Регистрация
+                        </a>
+                        <a type="button" class="nav__item" data-mdb-toggle="modal" data-mdb-target="#login">
+                            Войти
+                        </a>
+
                     </nav>
                 </div>
             </div>
@@ -290,8 +299,142 @@
 
         </div>
     </footer>
-    <script src="../js/main.js"></script>
+    <div class="pop-up">
 
+        <div class="modal fade" id="registration" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title text-white" id="exampleModalLabel">Регистрация</h5>
+                        <button type="button" class="btn-close " data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="pop-up__form">
+                            <div class="row mb-4">
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input type="text" id="form3Example1" class="form-control" />
+                                        <label class="form-label text-white" for="form3Example1">Имя</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <input type="text" id="form3Example2" class="form-control" />
+                                        <label class="form-label text-white" for="form3Example2">Фамилия</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input type="email" id="form3Example3" class="form-control" />
+                                <label class="form-label text-white" for="form3Example3">Электронная почта</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input type="password" id="form3Example4" class="form-control" />
+                                <label class="form-label text-white" for="form3Example4">Пароль</label>
+                            </div>
+
+                            <div class="form-check d-flex justify-content-center mb-4">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3"
+                                    checked />
+                                <label class="form-check-label text-white" for="form2Example3">
+                                    Подпишитесь на нашу рассылку
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block mb-4">Зарегистрироваться</button>
+
+                            <div class="text-center text-white">
+                                <p>или войдите с помощью:</p>
+                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-google"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title text-white" id="exampleModalLabel">Войти</h5>
+                        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-outline mb-4">
+                                <input type="email" id="form2Example1" class="form-control" />
+                                <label class="form-label text-white" for="form2Example1">Электронная почта</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input type="password" id="form2Example2" class="form-control" />
+                                <label class="form-label text-white" for="form2Example2">Пароль</label>
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col d-flex justify-content-center">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="form2Example3"
+                                            checked />
+                                        <label class="form-check-label text-white" for="form2Example3">Запомнить</label>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <a class="text-white" href="#!">Забыли пароль?</a>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block mb-4">Войти</button>
+
+                            <div class="text-center text-white">
+                                <p>Впервые у нас? <a class="text-white" href="#registration"> Зарегистрируйтесь</a></p>
+                                <p>или войдите с помощью:</p>
+                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-google"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../libs/query/jquery.min.js"></script>
+    <script src="../js/mdb.min.js"></script>
+    <script src="https://kit.fontawesome.com/576d270bd8.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
