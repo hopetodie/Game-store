@@ -12,3 +12,7 @@ $('ul.page__caption').on('click', 'li:not(.page__str_active)', function () {
       .addClass('page__str_active').siblings().removeClass('page__str_active')
       .closest('div.game-tabs__tabs').find('div.page__content').removeClass('page__content_active').eq($(this).index()).addClass('page__content_active');
   });
+
+  /// Burg
+ 
+ 
