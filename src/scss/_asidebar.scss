@@ -37,9 +37,11 @@
         text-align: center;
         margin-bottom: 111px;
     }
+  
 
     .navbar-nav {
         margin-left: 60px;
+       
 
         &__item {
             font-style: normal;
@@ -54,6 +56,12 @@
             &:hover{
                 color:#56CCF2;
             }
+            &.active{
+                color:#56CCF2;
+            }
+        }
+        &__link{
+            color: #2D9CDB;
         }
         &__img{
            margin-right: 13px;
