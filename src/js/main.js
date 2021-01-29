@@ -15,4 +15,7 @@ $('ul.page__caption').on('click', 'li:not(.page__str_active)', function () {
 
   /// Burg
  
- 
+ $('.burger').on('click', function(){
+   $('.burger').toggleClass('active')
+   $('asidebar').toggleClass('active')
+ })
