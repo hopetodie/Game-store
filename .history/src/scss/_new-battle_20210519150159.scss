@@ -1,0 +1,95 @@
+.new-battle {
+  
+    
+        .col {
+            margin-left: 10px;
+            padding: 0;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .bg-cloth {
+                background: #00000080 url(../image/battle/teresfal.png);
+                @include bg;
+
+                &::before {
+                    background: url(../image/battle/cloth.png)right top no-repeat;
+                }
+            }
+
+            .bg-plate {
+                background: #00000080 url(../image/battle/dala.png);
+                @include bg;
+
+                &::before {
+                    background: url(../image/battle/plate.png)right top no-repeat;
+                    right: -40px;
+                }
+            }
+
+            .wrapper {
+                position: relative;
+                z-index: 1;
+                padding-left: 20px;
+                padding-top: 20px;
+
+                &__title {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 21px;
+                    display: flex;
+                    align-items: center;
+                    color: #2D9CDB;
+                    margin-bottom: 10px;
+                }
+
+                &__subtitle {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 36px;
+                    line-height: 42px;
+                    display: flex;
+                    align-items: center;
+                    color: #ffffff80;
+                }
+
+                &__descr {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 40px;
+                    line-height: 47px;
+                    display: flex;
+                    align-items: center;
+                    color: #EE4700;
+                    margin-bottom: 16px;
+                }
+
+                &__descr-1 {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 12px;
+                    line-height: 14px;
+                    display: flex;
+                    align-items: center;
+                    color: #ffffff80;
+                }
+
+                &__link {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    color: #ffffff80;
+                    width: 100px;
+                    &:hover {
+                        color: #2D9CDB;
+                    }
+                }
+            }
+        }
+    }

@@ -1,0 +1,1431 @@
+@media (max-width:576px) {
+    .header {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 1;
+
+        .container {
+            margin-right: 40px;
+            margin-left: auto;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form {
+            margin: 20px 0 0 20px;
+            border: none;
+
+            &__input {
+                width: 180px;
+                height: 40px;
+                background: #343539;
+                border-radius: 4px;
+                color: #FFFFFF;
+                padding-left: 50px;
+                border: none;
+            }
+
+            &__btn {
+                width: 20px;
+                height: 20px;
+                position: relative;
+                display: block;
+                background: none;
+                border: none;
+                left: 15px;
+                top: -30px;
+
+                &:focus {
+                    outline: none;
+                }
+
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    background: url(../image/chapka/search.png);
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        .aside
+
+        .nav {
+            margin-top: 32px;
+
+            &__item {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                margin-right: 20px;
+                text-decoration: none;
+                color: #ffffff80;
+
+                &:hover {
+                    color: #56CCF2;
+                }
+
+            }
+        }
+    }
+    
+   
+    .burger {
+        position: absolute;
+        top: 75px;
+        left: 25px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        z-index: 3;
+    
+        &__line {
+            position: relative;
+            width: 30px;
+            height: 2px;
+            background: #FFFFFF;
+            z-index: 3;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #FFFFFF;
+                top: 8px;
+                left: 0;
+                transition: .25s;
+            }
+    
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #FFFFFF;
+                bottom: 8px;
+                left: 0;
+                transition: .25s;
+            }
+        }
+        &.active {
+            .burger__line {
+                background: none;
+                
+
+                &::before {
+                    transform: rotate(135deg);
+                    top: 0;
+                }
+
+                &::after {
+                    transform: rotate(45deg);
+                    bottom: 0;
+                }
+            }
+        }
+    }
+   
+
+    .homescreen {
+        &__bg {
+            padding: 110px 0 40px 20px;
+            background: url(../image/homescreen/homescreen.png) top no-repeat;
+
+        }
+
+        &__bg1 {
+            padding: 110px 0 40px 20px;
+            background: url(../image/Desktop2/Rectangle2.png) top no-repeat;
+            
+        }
+
+        &__title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 42px;
+            color: #FFFFFF;
+            margin-left: 50px;
+        }
+
+        &__subtitle {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 42px;
+            color: #ffffff80;
+            margin-left: 50px;
+        }
+
+        &__descr {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 47px;
+            color: #56CCF2;
+            margin-bottom: 14px;
+            margin-left: 50px;
+        }
+
+        &__link {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #ffffff80;
+            text-decoration: none;
+            margin-left: 120px;
+
+        }
+    }
+
+    .new-battle {
+
+        .row {
+            .col {
+                margin-left: 10px;
+                padding: 0;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                .bg-cloth {
+                    background: #00000080 url(../image/battle/teresfal.png);
+                    @include bg;
+                    margin-bottom: 20px;
+
+                    &::before {
+                        background: url(../image/battle/cloth.png)right top no-repeat;
+                        margin-right: 15px;
+                    }
+                }
+
+                .bg-plate {
+                    background: #00000080 url(../image/battle/dala.png);
+                    @include bg;
+
+                    &::before {
+                        background: url(../image/battle/plate.png)right top no-repeat;
+                        right: -15px;
+                    }
+                }
+
+                .wrapper {
+                    position: relative;
+                    z-index: 1;
+                    padding-left: 20px;
+                    padding-top: 20px;
+
+                    &__title {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 21px;
+                        display: flex;
+                        align-items: center;
+                        color: #2D9CDB;
+                        margin-bottom: 10px;
+                    }
+
+                    &__subtitle {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 30px;
+                        line-height: 42px;
+                        display: flex;
+                        align-items: center;
+                        color: #ffffff80;
+                    }
+
+                    &__descr {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 38px;
+                        line-height: 47px;
+                        display: flex;
+                        align-items: center;
+                        color: #EE4700;
+                        margin-bottom: 16px;
+                    }
+
+                    &__descr-1 {
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 12px;
+                        line-height: 14px;
+                        display: flex;
+                        align-items: center;
+                        color: #ffffff80;
+                    }
+
+                    &__link {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 16px;
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        color: #ffffff80;
+                        width: 100px;
+
+                        &:hover {
+                            color: #2D9CDB;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .tape {
+        overflow: hidden;
+        &__text {
+            display: flex;
+            margin-top: 50px;
+            margin-bottom: 45px;
+            margin-left: 30px;
+        }
+
+        &__title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 21px;
+            align-items: center;
+            color: #FFFFFF;
+            margin-right: 20px;
+        }
+
+        &__subtitle {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+            align-items: center;
+            color: #828282;
+        }
+
+
+        .bg {
+            background: #00000080 url(../image/tape/egobg.png);
+            max-width: 880px;
+            height: 130px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                background: url(../image/tape/chel.png)no-repeat;
+                width: 100%;
+                height: 200%;
+                top: -60px;
+                left: 10px;
+            }
+
+            .row {
+                padding-left: 210px;
+
+                .col {
+                    margin-top: 18px;
+
+
+                    .wrapper {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        width: 65px;
+                        height: 94px;
+                       
+
+
+                        &__text {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 16px;
+                            align-items: center;
+                            color: #FFFFFF;
+                            margin-bottom: 10px;
+                            padding-left: 10px;
+
+                            &:nth-child(odd) {
+                                opacity: 0.4;
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .first-battle {
+        &__text {
+            display: flex;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            margin-left: 30px;
+        }
+
+        &__title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 21px;
+            align-items: center;
+            color: #FFFFFF;
+            margin-right: 20px;
+        }
+
+        &__subtitle {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+            align-items: center;
+            color: #828282;
+        }
+
+        .row {
+            background: #1E1E20;
+
+            .col {
+                width: 205px;
+                height: 316px;
+                background: #000;
+                margin: 0 10px;
+                padding: 0;
+
+
+                .bg-1 {
+                    @include bg-1;
+                    background: url(../image/first_battle/image4.png) no-repeat;
+                    margin-left: 80px;
+                    margin-top: 20px;
+
+                    &::before {
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #060606 100%);
+                    }
+                }
+
+                .bg-2 {
+                    @include bg-1;
+                    background: url(../image/first_battle/image3.png) no-repeat;
+                    margin-left: 80px;
+                    margin-top: 20px;
+
+                    &::before {
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #060606 100%);
+                    }
+                }
+
+                .bg-3 {
+                    @include bg-1;
+                    background: url(../image/first_battle/image1.png) no-repeat;
+                    margin-left: 80px;
+                    margin-top: 20px;
+
+                    &::before {
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #060606 100%);
+                    }
+                }
+
+                .bg-4 {
+                    @include bg-1;
+                    background: url(../image/first_battle/image.png) no-repeat;
+                    margin-left: 80px;
+                    margin-top: 20px;
+
+                    &::before {
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #060606 100%);
+                    }
+                }
+
+                .wrapper {
+                    padding: 174px 10px 10px;
+                    position: relative;
+                    z-index: 1;
+
+                    &__title {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 21px;
+                        align-items: center;
+                        color: #BDBDBD;
+                    }
+
+                    .grafik {
+                        margin: 0;
+                        margin-top: 20px;
+                        position: relative;
+                        width: 190px;
+                        height: 77px;
+
+
+                        .dash-1 {
+                            position: absolute;
+                            opacity: 0.2;
+                            left: 0;
+                            top: 9px;
+                            width: 185px;
+                            height: 1px;
+                            background: url(../image/first_battle/dash-1.svg);
+                        }
+
+                        .dash-2 {
+                            position: absolute;
+                            opacity: 0.2;
+                            left: 0;
+                            top: 37px;
+                            width: 185px;
+                            height: 1px;
+                            background: url(../image/first_battle/dash-1.svg);
+                        }
+
+                        .dash-3 {
+                            position: absolute;
+                            opacity: 0.2;
+                            left: 0;
+                            top: 67px;
+                            width: 185px;
+                            height: 1px;
+                            background: url(../image/first_battle/dash-1.svg);
+                        }
+
+                        .line-grey {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 103%;
+                            height: 100%;
+                            background: url(../image/first_battle/line-grey.svg) no-repeat;
+
+                            .dot-1 {
+                                top: 43px;
+                                left: 30px;
+                                position: absolute;
+                                width: 2.93px;
+                                height: 3.55px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 1.5px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+
+                            .dot-2 {
+                                top: 20px;
+                                left: 60px;
+                                position: absolute;
+                                width: 2.93px;
+                                height: 3.55px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 1.5px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+
+                            .dot-3 {
+                                top: 55px;
+                                left: 110px;
+                                position: absolute;
+                                width: 2.93px;
+                                height: 3.55px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 1.5px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+
+                            .dot-4 {
+                                top: 28px;
+                                left: 165px;
+                                position: absolute;
+                                width: 2.93px;
+                                height: 3.55px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 1.5px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+                        }
+
+                        .line-grey-purple {
+                            position: absolute;
+                            top: 20px;
+                            left: -2px;
+                            width: 103%;
+                            height: 100%;
+                            background: url(../image/first_battle/grey-purple.svg) no-repeat;
+
+                            .dot-1 {
+                                top: 10px;
+                                left: 30px;
+                                position: absolute;
+                                width: 2.93px;
+                                height: 3.55px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 1.5px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+
+                            .dot-2 {
+                                top: 30px;
+                                left: 62px;
+                                position: absolute;
+                                width: 2.93px;
+                                height: 3.55px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 1.5px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+
+                            .dot-3 {
+                                top: 0px;
+                                left: 110px;
+                                position: absolute;
+                                width: 2.93px;
+                                height: 3.55px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 1.5px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+
+                            .dot-4 {
+                                top: 20px;
+                                left: 160px;
+                                position: absolute;
+                                width: 2.93px;
+                                height: 3.55px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 1.5px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+                        }
+
+                        .line-blue {
+                            position: absolute;
+                            top: 3px;
+                            left: -5px;
+                            width: 100%;
+                            height: 100%;
+                            background: url(../image/first_battle/line-blue.svg) no-repeat;
+
+                            .dot-5 {
+                                top: 43px;
+                                left: 30px;
+                                position: absolute;
+                                width: 3px;
+                                height: 3px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 2px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+
+                            .dot-6 {
+                                top: 19px;
+                                left: 70px;
+                                position: absolute;
+                                width: 3px;
+                                height: 3px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 2px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+
+                            .dot-7 {
+                                top: 46px;
+                                left: 122px;
+                                position: absolute;
+                                width: 3px;
+                                height: 3px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 2px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+
+                            .dot-8 {
+                                top: 28px;
+                                left: 165px;
+                                position: absolute;
+                                width: 3px;
+                                height: 3px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+                        }
+
+                        .line-orange {
+                            position: absolute;
+                            top: 21px;
+                            left: 0px;
+                            width: 100%;
+                            height: 100%;
+                            background: url(../image/first_battle/orange.svg) no-repeat;
+
+                            .dot-5 {
+                                top: 21px;
+                                left: 17px;
+                                position: absolute;
+                                width: 3px;
+                                height: 3px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 2px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+
+                            .dot-6 {
+                                top: 0px;
+                                left: 70px;
+                                position: absolute;
+                                width: 3px;
+                                height: 3px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 2px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+
+                            .dot-7 {
+                                top: 29px;
+                                left: 117px;
+                                position: absolute;
+                                width: 3px;
+                                height: 3px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 2px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+
+                            .dot-8 {
+                                top: 9px;
+                                left: 150px;
+                                position: absolute;
+                                width: 3px;
+                                height: 3px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+                        }
+
+                        .line-green {
+                            position: absolute;
+                            top: 20px;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: url(../image/first_battle/green.svg) no-repeat;
+
+                            .dot-5 {
+                                top: 20px;
+                                left: 17px;
+                                position: absolute;
+                                width: 3px;
+                                height: 3px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 2px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+
+                            .dot-6 {
+                                top: 0px;
+                                left: 70px;
+                                position: absolute;
+                                width: 3px;
+                                height: 3px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 2px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+
+                            .dot-7 {
+                                top: 29px;
+                                left: 117px;
+                                position: absolute;
+                                width: 3px;
+                                height: 3px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 2px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+
+                            .dot-8 {
+                                top: 9px;
+                                left: 150px;
+                                position: absolute;
+                                width: 3px;
+                                height: 3px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+                        }
+
+                        .line-purple {
+                            position: absolute;
+                            top: 19px;
+                            left: 0px;
+                            width: 100%;
+                            height: 100%;
+                            background: url(../image/first_battle/purple.svg) no-repeat;
+
+                            .dot-5 {
+                                top: 20px;
+                                left: 15px;
+                                position: absolute;
+                                width: 3px;
+                                height: 3px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 2px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+
+                            .dot-6 {
+                                top: 0px;
+                                left: 70px;
+                                position: absolute;
+                                width: 3px;
+                                height: 3px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 2px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+
+                            .dot-7 {
+                                top: 30px;
+                                left: 115px;
+                                position: absolute;
+                                width: 3px;
+                                height: 3px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 2px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+
+                            .dot-8 {
+                                top: 9px;
+                                left: 151px;
+                                position: absolute;
+                                width: 3px;
+                                height: 3px;
+                                background: #333333;
+                                border: 1px solid #FFFFFF;
+                                border-radius: px;
+                                box-sizing: border-box;
+                                transform: rotate(-180deg);
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .tape-1 {
+        overflow: hidden;
+        &__text {
+            display: flex;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            margin-left: 30px;
+        }
+
+        &__title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 21px;
+            align-items: center;
+            color: #FFFFFF;
+            margin-right: 20px;
+        }
+
+        &__subtitle {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+            align-items: center;
+            color: #828282;
+        }
+
+        .bg {
+            background: linear-gradient(90deg, #000000 58.81%, rgba(0, 0, 0, 0) 100%), url(../image/tape1/tapescreen.png);
+            width: 880px;
+            height: 130px;
+
+            .row {
+                .col {
+                    max-width: 50px;
+                    height: 66px;
+                    margin-right: 10px;
+
+                    &:last-child {
+                        margin-right: 27px;
+                    }
+
+                    .wrapper {
+
+                        &__img {
+                            margin-left: 12px;
+                        }
+
+                        &__title {
+                            width: 28px;
+                            height: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 16px;
+                            align-items: center;
+                            color: #828282;
+                            margin-left: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .new-battle-1 {
+        .row {
+            .col {
+                margin-left: 10px;
+                padding: 0;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                .bg-cloth {
+                    background: #00000080 url(../image/battle/teresfal.png);
+                    @include bg;
+                    margin-bottom: 20px;
+
+                    &::before {
+                        background: url(../image/battle/cloth.png)right top no-repeat;
+                        margin-right: 15px;
+                    }
+                }
+
+                .bg-plate {
+                    background: #00000080 url(../image/battle/dala.png);
+                    @include bg;
+
+                    &::before {
+                        background: url(../image/battle/plate.png)right top no-repeat;
+                        right: -15px;
+                    }
+                }
+
+                .wrapper {
+                    position: relative;
+                    z-index: 1;
+                    padding-left: 20px;
+                    padding-top: 20px;
+
+                    &__title {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 21px;
+                        display: flex;
+                        align-items: center;
+                        color: #2D9CDB;
+                        margin-bottom: 10px;
+                    }
+
+                    &__subtitle {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 30px;
+                        line-height: 42px;
+                        display: flex;
+                        align-items: center;
+                        color: #ffffff80;
+                    }
+
+                    &__descr {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 38px;
+                        line-height: 47px;
+                        display: flex;
+                        align-items: center;
+                        color: #EE4700;
+                        margin-bottom: 16px;
+                    }
+
+                    &__descr-1 {
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 12px;
+                        line-height: 14px;
+                        display: flex;
+                        align-items: center;
+                        color: #ffffff80;
+                    }
+
+                    &__link {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 16px;
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        color: #ffffff80;
+                        width: 100px;
+
+                        &:hover {
+                            color: #2D9CDB;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .shop {
+        .row {
+            .col {
+                margin: 0 10px;
+                padding: 0;
+                background: #000000;
+                margin-bottom: 20px;
+              
+    
+                .wrapper {
+                    width: 280px;
+                    padding-bottom: 10px;
+                    margin-left: 50px;
+                    .chel {
+                        position: relative;
+    
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            background: url(../image/shop/image6.png)no-repeat;
+                            width: 100%;
+                            height: 150%;
+                            top: -20px;
+                            left: 210px;
+                            z-index: 1;
+                        }
+                    }
+    
+                    .game {
+                        width: 280px;
+                        height: 65px;
+                        font-style: normal;
+                        font-weight: bold;
+                        color: #FFFFFF;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+    
+    
+                        &__title {
+                            font-size: 36px;
+                            line-height: 42px;
+                            margin: 0;
+                            margin-right: 5px;
+                        }
+    
+                        &__subtitle {
+                            font-size: 14px;
+                            line-height: 16px;
+                            margin: 0;
+                        }
+    
+                        &__descr {
+                            font-size: 14px;
+                            line-height: 16px;
+                            margin: 0;
+                        }
+                    }
+    
+                    .text {
+                        display: flex;
+    
+                        &__title {
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: #FFFFFF;
+                            margin: 20px 127px 10px 10px;
+                        }                 
+    
+                        &__subtitle {
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: #F2C94C;
+                            margin: 20px 10px 10px 0;
+                        }
+                        
+                    }
+    
+                    .text1 {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #BDBDBD;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .first-battle-1 {
+        &__text {
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 130px;
+        }
+    
+        &__title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 21px;
+            align-items: center;
+            color: #FFFFFF;
+            margin-right: 20px;
+        }
+    
+        &__subtitle {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+            align-items: center;
+            color: #828282;
+        }
+    
+        .row {
+            background: #1E1E20;
+    
+            .col {
+                width: 205px;
+                height: 396px;
+                background: #000;
+                margin: 0 10px;
+                padding: 0;
+    
+                .bg-1 {
+                    @include bg-1;
+                    background: url(../image/first_battle/image4.png) no-repeat;
+                    margin-left: 80px;
+                    margin-top: 10px;
+                    &::before {
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #060606 100%);
+                    }
+                }
+    
+                .bg-2 {
+                    @include bg-1;
+                    background: url(../image/first_battle/image3.png) no-repeat;
+                    margin-left: 80px;
+                    margin-top: 10px;
+                    &::before {
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #060606 100%);
+                    }
+                }
+    
+                .bg-3 {
+                    @include bg-1;
+                    background: url(../image/first_battle/image1.png) no-repeat;
+                    margin-left: 80px;
+                    margin-top: 10px;
+                    &::before {
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #060606 100%);
+                    }
+                }
+    
+                .bg-4 {
+                    @include bg-1;
+                    background: url(../image/first_battle/image.png) no-repeat;
+                    margin-left: 80px;
+                    margin-top: 10px;
+                    &::before {
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #060606 100%);
+                    }
+                }
+    
+                .wrapper {
+                    padding: 174px 10px 10px;
+                    position: relative;
+                    z-index: 1;
+    
+                    &__title {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 21px;
+                        align-items: center;
+                        color: #BDBDBD;
+                    }
+    
+                    &__subtitle {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #BDBDBD;
+                        margin-top: 20px;
+                    }
+    
+                    &__descr {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 36px;
+                        line-height: 42px;
+                        text-align: center;
+                        color: #F2C94C;
+                        margin-bottom: 10px;
+                    }
+                }
+    
+    
+            }
+        }
+    }
+    .exp {
+        .wrapper {
+            display: flex;
+    
+            .text {
+                display: flex;
+                margin-top: 10px;
+                margin-left: 40px;
+                margin-bottom: 20px;
+                &__title {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    color: #FFFFFF;
+                
+                 
+                   
+                
+                }
+    
+                &__subtitle {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    color: #828282;
+               
+                   
+                }
+            }
+        }
+    
+        .form {
+            display: none;
+        margin: 0;
+            border: none;
+    
+            &__input {
+                width: 160px;
+                height: 40px;
+                background: #343539;
+                border-radius: 4px;
+                color: #FFFFFF;
+                padding-left: 50px;
+                border: none;
+            }
+    
+            &__btn {
+                width: 20px;
+                height: 20px;
+                position: relative;
+                display: block;
+                background: none;
+                border: none;
+                left: 15px;
+                top: -30px;
+    
+                &:focus {
+                    outline: none;
+                }
+    
+    
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    background: url(../image/chapka/search.png);
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    
+    }
+    .game-tabs {
+        &__caption{
+            cursor: pointer;
+        }
+        .page__content {
+            display: none;
+    
+            &_active {
+                display: block;
+            }
+        }
+     .page__caption{
+         cursor: pointer;
+     }
+        .page {
+            display: none;
+    
+            &_active {
+                display: flex;
+            }
+        }
+    
+        &__tab {
+            width: 88px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+    
+            &_active {
+                background: #00000000;
+            }
+    
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    
+        &__content {
+            display: none;
+    
+            &_active {
+                display: block;
+                color: #fff;
+            }
+        }
+    
+    }
+    .footer {
+        margin-top: 40px;
+    
+        &__bg {
+            max-width: 1200px;
+            height: 193px;
+            margin: 0 auto;
+            background: #000;
+            position: relative;
+            z-index: 1;
+            display: flex;
+        }
+    
+        &__logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 280px;
+            margin-right: 40px;
+        }
+    
+        .row {
+            max-width: 880px;
+            width: 100%;
+            
+            .col {
+    
+                .wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 40px;
+    
+                    &__link {
+                        margin-bottom: 10px;
+                        text-decoration: none;
+                        color: grey;
+    
+                        &:first-child {
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
